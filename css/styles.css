@@ -220,7 +220,7 @@
   display: flex;
   flex-direction: column;
   border: 20px solid rgba(255, 255, 255, 0.2);
-  border-radius: 40px;
+  border-radius: 50px;
   padding-top: 5vh;
   padding-bottom: 5vh;
   z-index: 20;
@@ -297,7 +297,7 @@
   }
   .little-box {
     margin: 0;
-    height: 30vh;
+    height: 23vh;
     margin-top: 22vh;
   }
   .little-memoji-box {
@@ -365,5 +365,47 @@
     position: relative;
     top: -200px; /* Ajusta el valor para elevar la sección */
     z-index: -10; /* Asegura que la sección esté por encima de las tarjetas */
+  }
+}
+@media screen and (min-width: 1745px) {
+  .little-box {
+    margin: 0;
+    margin-top: 20vh;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    height: 23vh;
+  }
+  .cards-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0;
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 20vh;
+    justify-content: center;
+  }
+  .cards-container .card1, .cards-container .card2, .cards-container .card3 {
+    width: 13vw;
+  }
+  .section1 {
+    top: -250px;
+  }
+  .memojis .memoji1, .memojis .memoji2, .memojis .memoji3 {
+    width: 13vw;
+  }
+  .memojis .memoji2 {
+    left: 7vw;
+  }
+  .memojis .memoji3 {
+    left: 14vw;
+  }
+  .little-memoji-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .little-memoji-box .little-memoji {
+    width: 1.4vw;
   }
 }/*# sourceMappingURL=styles.css.map */
