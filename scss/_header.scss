@@ -1,0 +1,52 @@
+.logo-color {
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text; /* Safari/Chrome-specific prefix */
+    background-clip: text;
+    color: transparent;
+}
+
+.logo-text {
+    font-size: 2rem;
+    justify-content: center;
+    font-family: map-get($fonts, title) ;
+    font-weight: bolder;
+    align-items: center;
+    align-self: center;
+}
+
+
+.nav-item {
+    margin: 0 1px;
+    
+    .nav-link {  // nav-var text style
+        font-family: map-get($fonts, subtitle);
+        font-size: map-get($sizes, nav-bar );
+        font-weight: medium;
+        font-style: normal;
+    }
+}
+
+.navbar-nav {
+    // center the navbar    
+    justify-content: center;
+    align-items: end;
+    align-self: center;
+    margin-right: 3vw;
+    padding: 2vh 0;
+    
+
+
+}
+
+
+@media screen and (min-width: 1024px) {
+    .navbar {
+        border-bottom: 0.01px solid white;
+    }
+    .navbar-nav {
+        margin-left: 15vw;
+        
+    }
+}
+
+

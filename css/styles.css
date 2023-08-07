@@ -1,0 +1,316 @@
+@font-face {
+  font-family: "Roobert";
+  src: url("../assets/fonts/Roobert-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rebond Grotesque";
+  src: url("../assets/fonts/Rebond Grotesque.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rebond Grotesque";
+  src: url("../assets/fonts/Rebond Grotesque Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rebond Grotesque";
+  src: url("../assets/fonts/Rebond Grotesque Bold Italic.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Rebond Grotesque";
+  src: url("../assets/fonts/Rebond Grotesque Extrabold.otf") format("opentype");
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rebond Grotesque";
+  src: url("../assets/fonts/Rebond Grotesque Medium.otf") format("opentype");
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rebond Grotesque";
+  src: url("../assets/fonts/Rebond Grotesque Light.otf") format("opentype");
+  font-weight: light;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  /* list-style: none; */
+}
+
+.dark {
+  background-color: #050027;
+}
+
+.overflow-x {
+  overflow-x: hidden;
+}
+
+.red {
+  background-color: red;
+}
+
+.logo-color {
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text; /* Safari/Chrome-specific prefix */
+  background-clip: text;
+  color: transparent;
+}
+
+.logo-text {
+  font-size: 2rem;
+  justify-content: center;
+  font-family: "Roobert";
+  font-weight: bolder;
+  align-items: center;
+  align-self: center;
+}
+
+.nav-item {
+  margin: 0 1px;
+}
+.nav-item .nav-link {
+  font-family: "Rebond Grotesque";
+  font-size: 1.4rem;
+  font-weight: medium;
+  font-style: normal;
+}
+
+.navbar-nav {
+  justify-content: center;
+  align-items: end;
+  align-self: center;
+  margin-right: 3vw;
+  padding: 2vh 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    border-bottom: 0.01px solid white;
+  }
+  .navbar-nav {
+    margin-left: 15vw;
+  }
+}
+.title1 {
+  font-family: "Rebond Grotesque";
+  font-size: 4rem;
+  font-weight: bolder;
+  text-align: left;
+  color: #FFFFFF;
+  margin: 1vh 4vw 1vh 4vw;
+}
+
+.gradient {
+  background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
+  -webkit-background-clip: text; /* Safari/Chrome-specific prefix */
+  background-clip: text;
+  color: transparent;
+}
+
+.little-box {
+  background-color: #508DFF;
+  border-radius: 30px;
+  margin: 2vh 6vw 2vh 6vw;
+}
+
+.little-title {
+  font-family: "Rebond Grotesque";
+  font-size: 2rem;
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 2vh 2vw 0 2vw;
+}
+
+.little-subtitle {
+  font-family: "Roobert";
+  font-size: 1rem;
+  color: #FFFFFF;
+  font-weight: lighter;
+  opacity: 0.7;
+  padding: 0 2vw 0 2vw;
+}
+
+.little-memoji-box {
+  margin-left: 2vw;
+}
+.little-memoji-box .little-memoji {
+  width: 5vw;
+  border: 2px solid white;
+  border-radius: 40px;
+  margin-bottom: 2vh;
+}
+
+.paragraph {
+  font-family: "Rebond Grotesque";
+  font-size: 2rem;
+  color: #FFFFFF;
+}
+
+.circle1 {
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  width: 100px;
+  height: 100px;
+  background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+.circle1 .row1 {
+  font-size: 2rem;
+}
+
+.memojis {
+  display: flex;
+  position: relative;
+  flex-shrink: 0;
+  text-align: center;
+  align-items: center;
+}
+.memojis .memoji1 {
+  width: 25vw;
+  flex-shrink: 0;
+  position: absolute;
+  left: 0px;
+}
+.memojis .memoji2 {
+  width: 25vw;
+  flex-shrink: 0;
+  position: absolute;
+  left: 11vw;
+  z-index: 10;
+}
+.memojis .memoji3 {
+  width: 25vw;
+  flex-shrink: 0;
+  position: absolute;
+  left: 22vw;
+}
+
+@media screen and (min-width: 1024px) {
+  .title1 {
+    font-size: 8rem;
+    margin: 0;
+  }
+  .little-box {
+    margin: 0;
+    height: 30vh;
+  }
+  .little-memoji-box {
+    margin-left: 2vw;
+    margin-top: 2vh;
+  }
+  .little-memoji-box .little-memoji {
+    width: 2vw;
+    border: 2px solid white;
+    border-radius: 40px;
+    margin-bottom: 0vh;
+  }
+  .paragraph {
+    margin-left: 0vw;
+  }
+  .circle1 {
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .circle1 .row1 {
+    font-size: 4rem;
+  }
+  .memojis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-shrink: 0;
+  }
+  .memojis .memoji1 {
+    width: 18vw;
+    flex-shrink: 0;
+    position: absolute;
+    left: 0px;
+  }
+  .memojis .memoji2 {
+    width: 18vw;
+    flex-shrink: 0;
+    position: absolute;
+    left: 9vw;
+    z-index: 10;
+  }
+  .memojis .memoji3 {
+    width: 18vw;
+    flex-shrink: 0;
+    position: absolute;
+    left: 18vw;
+  }
+  .section1 {
+    background-color: #EEF3FC;
+  }
+  .cards-container {
+    border: 20px solid rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    position: relative;
+    z-index: 11;
+  }
+  .card1 {
+    background-color: #FFFFFF;
+    width: 20vw;
+    height: 25vh;
+    border-radius: 30px;
+    align-self: center;
+    margin: 2vh;
+  }
+  .card1 .card-button {
+    background-color: #77BFCF;
+    border-radius: 15px;
+    font-family: "Roobert";
+    font-size: 1rem;
+    color: #FFFFFF;
+    margin: 2vh;
+    padding: 1vh 0vw 1vh 1vw;
+    justify-self: start;
+    text-align: left;
+    width: 10vw;
+  }
+  .card1 .card-subtitle {
+    font-family: "Rebond Grotesque";
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin: 0 2vh;
+  }
+  .card1 .card-text {
+    font-family: "Roobert";
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 1vh 2vh;
+  }
+  .card1 .progress {
+    width: 80%;
+    height: 10px;
+    border-radius: 10px;
+    margin: 0 2vh;
+  }
+  .card1 .progress .progress-bar {
+    width: 50px;
+    background-color: #77BFCF;
+  }
+}/*# sourceMappingURL=styles.css.map */

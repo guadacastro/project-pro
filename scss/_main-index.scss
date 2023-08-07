@@ -1,0 +1,282 @@
+.title1 {
+    font-family: map-get($fonts, subtitle);
+    font-size: map-get($sizes, title);
+    font-weight: bolder;
+    text-align: left;
+    color: map-get($colors, white );
+    margin: 1vh 4vw 1vh 4vw;
+
+}
+
+.gradient {
+    background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
+    -webkit-background-clip: text; /* Safari/Chrome-specific prefix */
+    background-clip: text;
+    color: transparent;
+}
+
+.little-box {
+    background-color: map-get($colors, blue );
+    border-radius: map-get($border, round);
+    margin: 2vh 6vw 2vh 6vw;
+    
+}
+
+.little-title {
+    font-family: map-get($fonts, subtitle);
+    font-size: map-get($sizes, subtitle);
+    color: map-get($colors, white );
+    font-weight: bold;
+    padding: 2vh 2vw 0 2vw;
+}
+
+.little-subtitle {
+    font-family: map-get($fonts, title);
+    font-size: map-get($sizes, body);
+    color: map-get($colors, white);
+    font-weight: lighter;
+    opacity: .7;
+    padding:  0 2vw 0 2vw;
+}
+
+.little-memoji-box {
+    margin-left: 2vw;
+
+
+    .little-memoji {
+        width: 5vw;
+        border: 2px solid white;
+        border-radius: 40px;
+        margin-bottom: 2vh;
+    }
+
+}
+
+.paragraph {
+    font-family: map-get($fonts, subtitle);
+    font-size: map-get($sizes, subtitle);
+    color: map-get($colors, white);
+
+    
+}
+
+.circle1 {
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    .row1 {
+        font-size: 2rem;
+    }
+}
+
+.memojis {
+    display: flex;
+    position: relative;
+    flex-shrink: 0;
+    text-align: center;
+    align-items: center;
+    
+    .memoji1 {
+        width: 25vw;
+        flex-shrink: 0;
+        position: absolute;
+        left: 0px;
+    }
+
+    .memoji2 {
+        width: 25vw;
+        flex-shrink: 0;
+        position: absolute;
+        left: 11vw;
+        z-index: 10;
+    }
+
+    .memoji3 {
+        width: 25vw;
+        flex-shrink: 0;
+        position: absolute;
+        left: 22vw;
+    }
+}
+
+
+// @media screen and (max-width: 1200px)  {
+//     .little-memoji-box {
+//         background-color: red;
+//         .little-memoji {
+//             width: 10px;
+//             border: 2px solid white;
+//             border-radius: 40px;
+//         }
+    
+//     }
+
+// }
+
+
+@media screen and (min-width: 1024px)  {
+
+    .title1 {
+        font-size: map-get($sizes, big-title);
+        margin: 0;
+    }
+
+    .little-box {
+        margin: 0;
+        height: 30vh;
+    }
+
+    .little-memoji-box {
+        margin-left: 2vw;
+        margin-top: 2vh;
+    
+        .little-memoji {
+            width: 2vw;
+            border: 2px solid white;
+            border-radius: 40px;
+            margin-bottom: 0vh;
+        }
+    
+    }
+
+    .paragraph {
+        margin-left: 0vw;
+    }
+
+    .circle1 {
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        width: 150px;
+        height: 150px;
+        background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .row1 {
+            font-size: 4rem;
+    
+            
+        }
+    }
+    
+    .memojis {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        flex-shrink: 0;
+        
+        .memoji1 {
+            width: 18vw;
+            flex-shrink: 0;
+            position: absolute;
+            left: 0px;
+        }
+
+        .memoji2 {
+            width: 18vw;
+            flex-shrink: 0;
+            position: absolute;
+            left: 9vw;
+            z-index: 10;
+        }
+
+        .memoji3 {
+            width: 18vw;
+            flex-shrink: 0;
+            position: absolute;
+            left: 18vw;
+        }
+    }
+
+    .section1 {
+        background-color: map-get($colors, light-grey);
+    }
+
+    .cards-container {
+        // display: flex;
+        // justify-content: space-between; 
+      
+        border: 20px solid rgb(255, 255, 255, 0.1);
+        border-radius: map-get($border, rounder);
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        position: relative;
+        z-index: 11;
+        // padding-left: 1vw;
+        // padding-right: 1vw;
+    }
+
+    .card1 {
+        background-color: map-get($colors, white);
+        width: 20vw;
+        height: 25vh;
+        border-radius: map-get($border , round);
+        align-self: center;
+        margin: 2vh;
+
+        .card-button {
+            background-color: map-get($colors, light-blue);
+            border-radius: 15px;
+            font-family: map-get($fonts, title);
+            font-size: map-get($sizes, body);
+            color: map-get($colors, white);
+            margin:  2vh;
+            padding: 1vh 0vw 1vh 1vw;
+            justify-self: start;
+            text-align: left;
+            width: 10vw;
+        }
+
+        .card-subtitle {
+            font-family: map-get($fonts, subtitle);
+            font-weight: bold;
+            font-size: map-get($sizes, nav-bar);
+            margin: 0 2vh;
+        }
+
+        .card-text {
+            font-family: map-get($fonts, title);
+            font-size: map-get($sizes, body);
+            color: rgb(0, 0, 0, 0.5);
+            margin: 1vh 2vh;
+        }
+
+        .progress {
+            width: 80%;
+            height: 10px;
+            border-radius: 10px;
+            margin: 0 2vh;
+            .progress-bar {
+                width: 50px;
+  
+                background-color: map-get($colors, light-blue);
+            }
+        }
+
+    }
+}
+
+// @media screen and (min-width: 769px) and (max-width: 1023) {
+
+//     .little-memoji-box {
+//         margin-left: 2vw;
+//         margin-top: 2vh;
+//         background-color: blue;
+    
+//         .little-memoji {
+//             width: 5px;
+//             border: 2px solid white;
+//             border-radius: 40px;
+//         }
+    
+//     }
+
+// }
+
