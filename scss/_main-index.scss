@@ -118,6 +118,7 @@
     padding-top: 5vh;
     padding-bottom: 5vh;
     z-index: 20;
+
     // padding-left: 1vw;
     // padding-right: 1vw;
 }
@@ -125,7 +126,6 @@
 .card1 {
     background-color: map-get($colors, white);
     width: 80vw;
-
     height: auto;
     border-radius: map-get($border , round);
     align-self: center;
@@ -242,7 +242,7 @@
     .little-memoji-box {
         margin-left: 2vw;
         margin-top: 2vh;
-    
+        width: auto;
         .little-memoji {
             width: 2vw;
             border: 2px solid white;
@@ -338,14 +338,12 @@
     .cards-container {
         flex-direction: row;
         flex-wrap: nowrap;
-        margin: 0;
-        margin-left: 0;
-        padding-left: 0;
+        justify-content: center;
         margin-top: 20vh;
         justify-content: center;
-
+        width: auto;
         .card1 {
-            width: 13vw;
+            width: 20vw;
         }
     }
 
@@ -354,8 +352,12 @@
     }
 
     .memojis {
+
+        flex-wrap: nowrap;
+    
         .memoji1, .memoji2, .memoji3 {
-            width: 13vw;
+            width: 14vw;
+            height: auto;
         }
 
         .memoji2 {
@@ -367,14 +369,14 @@
         }
     }
 
+ 
 
     .little-memoji-box{
-        display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: nowrap;
-
+        height: auto;
         .little-memoji {
-            width: 1.4vw;
+            width: 1.5vw;
         }
     }
 

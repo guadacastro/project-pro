@@ -303,6 +303,7 @@
   .little-memoji-box {
     margin-left: 2vw;
     margin-top: 2vh;
+    width: auto;
   }
   .little-memoji-box .little-memoji {
     width: 2vw;
@@ -379,20 +380,23 @@
   .cards-container {
     flex-direction: row;
     flex-wrap: nowrap;
-    margin: 0;
-    margin-left: 0;
-    padding-left: 0;
+    justify-content: center;
     margin-top: 20vh;
     justify-content: center;
+    width: auto;
   }
   .cards-container .card1, .cards-container .card2, .cards-container .card3 {
-    width: 13vw;
+    width: 20vw;
   }
   .section1 {
     top: -250px;
   }
+  .memojis {
+    flex-wrap: nowrap;
+  }
   .memojis .memoji1, .memojis .memoji2, .memojis .memoji3 {
-    width: 13vw;
+    width: 14vw;
+    height: auto;
   }
   .memojis .memoji2 {
     left: 7vw;
@@ -401,11 +405,11 @@
     left: 14vw;
   }
   .little-memoji-box {
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
+    height: auto;
   }
   .little-memoji-box .little-memoji {
-    width: 1.4vw;
+    width: 1.5vw;
   }
 }/*# sourceMappingURL=styles.css.map */
