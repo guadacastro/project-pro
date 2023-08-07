@@ -43,13 +43,14 @@
 
 .little-memoji-box {
     margin-left: 2vw;
-
+    flex-wrap: nowrap;
 
     .little-memoji {
         width: 5vw;
         border: 2px solid white;
         border-radius: 40px;
         margin-bottom: 2vh;
+        margin-top: 2vh;
     }
 
 }
@@ -108,6 +109,108 @@
 }
 
 
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    border: 20px solid rgb(255, 255, 255, 0.2);
+    border-radius: map-get($border, rounder);
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    z-index: 20;
+    // padding-left: 1vw;
+    // padding-right: 1vw;
+}
+
+.card1 {
+    background-color: map-get($colors, white);
+    width: 80vw;
+
+    height: auto;
+    border-radius: map-get($border , round);
+    align-self: center;
+    margin: 2vh;
+
+    .card-button {
+        background-color: map-get($colors, light-blue);
+        border-radius: 15px;
+        font-family: map-get($fonts, title);
+        font-size: map-get($sizes, body);
+        color: map-get($colors, white);
+        margin:  2vh;
+        padding: 1vh 0vw 1vh 1vw;
+        justify-self: start;
+        text-align: left;
+        width: 34vw;
+    }
+
+    .card-subtitle {
+        font-family: map-get($fonts, subtitle);
+        font-weight: bold;
+        font-size: map-get($sizes, nav-bar);
+        margin: 0 2vh;
+    }
+
+    .card-text {
+        font-family: map-get($fonts, title);
+        font-size: map-get($sizes, body);
+        color: rgb(0, 0, 0, 0.5);
+        margin: 1vh 2vh;
+    }
+
+    .progress {
+        width: 80%;
+        height: 10px;
+        border-radius: 10px;
+        margin: 0 2vh;
+        .progress-bar {
+            width: 50px;
+
+            background-color: map-get($colors, light-blue);
+        }
+    }
+
+}
+
+.card2 {
+    @extend .card1;
+    .card-button {
+        background-color: map-get($colors, pink);
+    }
+    
+    .progress {
+        .progress-bar {
+            background-color: map-get($colors, pink);
+            width: 120px;
+        }
+    }
+
+}
+
+.card3 {
+    @extend .card1;
+    .card-button {
+        background-color: map-get($colors, blue);
+    }
+    
+    .progress {
+        .progress-bar {
+            background-color: map-get($colors, blue);
+            width: 190px;
+        }
+
+    }
+
+}
+
+.section1 {
+    background-color: map-get($colors, light-grey);
+    
+}
+
+
+
+
 // @media screen and (max-width: 1200px)  {
 //     .little-memoji-box {
 //         background-color: red;
@@ -127,11 +230,13 @@
     .title1 {
         font-size: map-get($sizes, big-title);
         margin: 0;
+        margin-top: 20vh;
     }
 
     .little-box {
         margin: 0;
         height: 30vh;
+        margin-top: 22vh;
     }
 
     .little-memoji-box {
@@ -143,6 +248,7 @@
             border: 2px solid white;
             border-radius: 40px;
             margin-bottom: 0vh;
+            margin-top: 0;
         }
     
     }
@@ -197,103 +303,25 @@
         }
     }
 
-    .section1 {
-        background-color: map-get($colors, light-grey);
-    }
-
     .cards-container {
-        // display: flex;
-        // justify-content: space-between; 
-      
-        border: 20px solid rgb(255, 255, 255, 0.1);
-        border-radius: map-get($border, rounder);
-        padding-top: 5vh;
-        padding-bottom: 5vh;
-        position: relative;
-        z-index: 11;
-        // padding-left: 1vw;
-        // padding-right: 1vw;
+        flex-direction: row;
     }
 
     .card1 {
-        background-color: map-get($colors, white);
         width: 20vw;
-        height: auto;
-        border-radius: map-get($border , round);
-        align-self: center;
-        margin: 2vh;
-
-        .card-button {
-            background-color: map-get($colors, light-blue);
-            border-radius: 15px;
-            font-family: map-get($fonts, title);
-            font-size: map-get($sizes, body);
-            color: map-get($colors, white);
-            margin:  2vh;
-            padding: 1vh 0vw 1vh 1vw;
-            justify-self: start;
-            text-align: left;
-            width: 10vw;
-        }
-
-        .card-subtitle {
-            font-family: map-get($fonts, subtitle);
-            font-weight: bold;
-            font-size: map-get($sizes, nav-bar);
-            margin: 0 2vh;
-        }
-
-        .card-text {
-            font-family: map-get($fonts, title);
-            font-size: map-get($sizes, body);
-            color: rgb(0, 0, 0, 0.5);
-            margin: 1vh 2vh;
-        }
-
-        .progress {
-            width: 80%;
-            height: 10px;
-            border-radius: 10px;
-            margin: 0 2vh;
-            .progress-bar {
-                width: 50px;
-  
-                background-color: map-get($colors, light-blue);
-            }
-        }
-
     }
 
-    .card2 {
-        @extend .card1;
-        .card-button {
-            background-color: map-get($colors, pink);
-        }
+    .section1 {
+        background-color: map-get($colors, light-grey);
+        height: 500px; // por ahora fijo, despues sacar
+        position: relative;
+        top: -200px; /* Ajusta el valor para elevar la sección */
+        z-index: -10; /* Asegura que la sección esté por encima de las tarjetas */;
         
-        .progress {
-            .progress-bar {
-                background-color: map-get($colors, pink);
-                width: 120px;
-            }
-        }
-
     }
+    
+    
 
-    .card3 {
-        @extend .card1;
-        .card-button {
-            background-color: map-get($colors, blue);
-        }
-        
-        .progress {
-            .progress-bar {
-                background-color: map-get($colors, blue);
-                width: 190px;
-            }
-
-        }
-
-    }
 }
 
 

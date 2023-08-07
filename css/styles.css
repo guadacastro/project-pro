@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Roobert";
   src: url("../assets/fonts/Roobert-Regular.ttf") format("truetype");
@@ -106,6 +107,16 @@
     margin-left: 15vw;
   }
 }
+@media screen and (min-width: 1024px) {
+  .navbar {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #050027;
+  }
+}
 .title1 {
   font-family: "Rebond Grotesque";
   font-size: 4rem;
@@ -147,12 +158,14 @@
 
 .little-memoji-box {
   margin-left: 2vw;
+  flex-wrap: nowrap;
 }
 .little-memoji-box .little-memoji {
   width: 5vw;
   border: 2px solid white;
   border-radius: 40px;
   margin-bottom: 2vh;
+  margin-top: 2vh;
 }
 
 .paragraph {
@@ -203,14 +216,89 @@
   left: 22vw;
 }
 
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  border: 20px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  z-index: 20;
+}
+
+.card1, .card3, .card2 {
+  background-color: #FFFFFF;
+  width: 80vw;
+  height: auto;
+  border-radius: 30px;
+  align-self: center;
+  margin: 2vh;
+}
+.card1 .card-button, .card3 .card-button, .card2 .card-button {
+  background-color: #77BFCF;
+  border-radius: 15px;
+  font-family: "Roobert";
+  font-size: 1rem;
+  color: #FFFFFF;
+  margin: 2vh;
+  padding: 1vh 0vw 1vh 1vw;
+  justify-self: start;
+  text-align: left;
+  width: 34vw;
+}
+.card1 .card-subtitle, .card3 .card-subtitle, .card2 .card-subtitle {
+  font-family: "Rebond Grotesque";
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin: 0 2vh;
+}
+.card1 .card-text, .card3 .card-text, .card2 .card-text {
+  font-family: "Roobert";
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 1vh 2vh;
+}
+.card1 .progress, .card3 .progress, .card2 .progress {
+  width: 80%;
+  height: 10px;
+  border-radius: 10px;
+  margin: 0 2vh;
+}
+.card1 .progress .progress-bar, .card3 .progress .progress-bar, .card2 .progress .progress-bar {
+  width: 50px;
+  background-color: #77BFCF;
+}
+
+.card2 .card-button {
+  background-color: #FFB0E9;
+}
+.card2 .progress .progress-bar {
+  background-color: #FFB0E9;
+  width: 120px;
+}
+
+.card3 .card-button {
+  background-color: #508DFF;
+}
+.card3 .progress .progress-bar {
+  background-color: #508DFF;
+  width: 190px;
+}
+
+.section1 {
+  background-color: #EEF3FC;
+}
+
 @media screen and (min-width: 1024px) {
   .title1 {
     font-size: 8rem;
     margin: 0;
+    margin-top: 20vh;
   }
   .little-box {
     margin: 0;
     height: 30vh;
+    margin-top: 22vh;
   }
   .little-memoji-box {
     margin-left: 2vw;
@@ -221,6 +309,7 @@
     border: 2px solid white;
     border-radius: 40px;
     margin-bottom: 0vh;
+    margin-top: 0;
   }
   .paragraph {
     margin-left: 0vw;
@@ -264,71 +353,17 @@
     position: absolute;
     left: 18vw;
   }
+  .cards-container {
+    flex-direction: row;
+  }
+  .card1, .card2, .card3 {
+    width: 20vw;
+  }
   .section1 {
     background-color: #EEF3FC;
-  }
-  .cards-container {
-    border: 20px solid rgba(255, 255, 255, 0.1);
-    border-radius: 40px;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    height: 500px;
     position: relative;
-    z-index: 11;
-  }
-  .card1, .card3, .card2 {
-    background-color: #FFFFFF;
-    width: 20vw;
-    height: auto;
-    border-radius: 30px;
-    align-self: center;
-    margin: 2vh;
-  }
-  .card1 .card-button, .card3 .card-button, .card2 .card-button {
-    background-color: #77BFCF;
-    border-radius: 15px;
-    font-family: "Roobert";
-    font-size: 1rem;
-    color: #FFFFFF;
-    margin: 2vh;
-    padding: 1vh 0vw 1vh 1vw;
-    justify-self: start;
-    text-align: left;
-    width: 10vw;
-  }
-  .card1 .card-subtitle, .card3 .card-subtitle, .card2 .card-subtitle {
-    font-family: "Rebond Grotesque";
-    font-weight: bold;
-    font-size: 1.4rem;
-    margin: 0 2vh;
-  }
-  .card1 .card-text, .card3 .card-text, .card2 .card-text {
-    font-family: "Roobert";
-    font-size: 1rem;
-    color: rgba(0, 0, 0, 0.5);
-    margin: 1vh 2vh;
-  }
-  .card1 .progress, .card3 .progress, .card2 .progress {
-    width: 80%;
-    height: 10px;
-    border-radius: 10px;
-    margin: 0 2vh;
-  }
-  .card1 .progress .progress-bar, .card3 .progress .progress-bar, .card2 .progress .progress-bar {
-    width: 50px;
-    background-color: #77BFCF;
-  }
-  .card2 .card-button {
-    background-color: #FFB0E9;
-  }
-  .card2 .progress .progress-bar {
-    background-color: #FFB0E9;
-    width: 120px;
-  }
-  .card3 .card-button {
-    background-color: #508DFF;
-  }
-  .card3 .progress .progress-bar {
-    background-color: #508DFF;
-    width: 190px;
+    top: -200px; /* Ajusta el valor para elevar la sección */
+    z-index: -10; /* Asegura que la sección esté por encima de las tarjetas */
   }
 }/*# sourceMappingURL=styles.css.map */
