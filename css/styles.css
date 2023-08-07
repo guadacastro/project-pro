@@ -60,6 +60,10 @@
   background-color: red;
 }
 
+.pink {
+  background-color: #FFB0E9;
+}
+
 .logo-color {
   background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text; /* Safari/Chrome-specific prefix */
@@ -271,15 +275,15 @@
     position: relative;
     z-index: 11;
   }
-  .card1 {
+  .card1, .card3, .card2 {
     background-color: #FFFFFF;
     width: 20vw;
-    height: 25vh;
+    height: auto;
     border-radius: 30px;
     align-self: center;
     margin: 2vh;
   }
-  .card1 .card-button {
+  .card1 .card-button, .card3 .card-button, .card2 .card-button {
     background-color: #77BFCF;
     border-radius: 15px;
     font-family: "Roobert";
@@ -291,26 +295,40 @@
     text-align: left;
     width: 10vw;
   }
-  .card1 .card-subtitle {
+  .card1 .card-subtitle, .card3 .card-subtitle, .card2 .card-subtitle {
     font-family: "Rebond Grotesque";
     font-weight: bold;
     font-size: 1.4rem;
     margin: 0 2vh;
   }
-  .card1 .card-text {
+  .card1 .card-text, .card3 .card-text, .card2 .card-text {
     font-family: "Roobert";
     font-size: 1rem;
     color: rgba(0, 0, 0, 0.5);
     margin: 1vh 2vh;
   }
-  .card1 .progress {
+  .card1 .progress, .card3 .progress, .card2 .progress {
     width: 80%;
     height: 10px;
     border-radius: 10px;
     margin: 0 2vh;
   }
-  .card1 .progress .progress-bar {
+  .card1 .progress .progress-bar, .card3 .progress .progress-bar, .card2 .progress .progress-bar {
     width: 50px;
     background-color: #77BFCF;
+  }
+  .card2 .card-button {
+    background-color: #FFB0E9;
+  }
+  .card2 .progress .progress-bar {
+    background-color: #FFB0E9;
+    width: 120px;
+  }
+  .card3 .card-button {
+    background-color: #508DFF;
+  }
+  .card3 .progress .progress-bar {
+    background-color: #508DFF;
+    width: 190px;
   }
 }/*# sourceMappingURL=styles.css.map */

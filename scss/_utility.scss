@@ -10,3 +10,7 @@
 .red {
     background-color: red;
 }
+
+.pink {
+    background-color: map-get($colors, pink);
+}

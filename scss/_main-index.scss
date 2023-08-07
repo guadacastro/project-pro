@@ -15,6 +15,8 @@
     color: transparent;
 }
 
+
+
 .little-box {
     background-color: map-get($colors, blue );
     border-radius: map-get($border, round);
@@ -216,7 +218,7 @@
     .card1 {
         background-color: map-get($colors, white);
         width: 20vw;
-        height: 25vh;
+        height: auto;
         border-radius: map-get($border , round);
         align-self: center;
         margin: 2vh;
@@ -261,7 +263,40 @@
         }
 
     }
+
+    .card2 {
+        @extend .card1;
+        .card-button {
+            background-color: map-get($colors, pink);
+        }
+        
+        .progress {
+            .progress-bar {
+                background-color: map-get($colors, pink);
+                width: 120px;
+            }
+        }
+
+    }
+
+    .card3 {
+        @extend .card1;
+        .card-button {
+            background-color: map-get($colors, blue);
+        }
+        
+        .progress {
+            .progress-bar {
+                background-color: map-get($colors, blue);
+                width: 190px;
+            }
+
+        }
+
+    }
 }
+
+
 
 // @media screen and (min-width: 769px) and (max-width: 1023) {
 
