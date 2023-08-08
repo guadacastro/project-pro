@@ -286,7 +286,7 @@
   width: 190px;
 }
 
-.section1 {
+.section-white {
   background-color: #EEF3FC;
 }
 
@@ -326,7 +326,7 @@
     justify-content: center;
     align-items: center;
   }
-  .circle1 .row1 {
+  .circle1 .arrow {
     font-size: 4rem;
   }
   .memojis {
@@ -361,12 +361,66 @@
   .card1, .card2, .card3 {
     width: 20vw;
   }
-  .section1 {
+  .section-white {
     background-color: #EEF3FC;
-    height: 500px;
+    height: 300vh;
     position: relative;
     top: -200px; /* Ajusta el valor para elevar la sección */
     z-index: -10; /* Asegura que la sección esté por encima de las tarjetas */
+  }
+  .box-container .box1 {
+    margin-top: 40vh;
+    padding: 6vh;
+  }
+  .white-box {
+    background-color: #FFFFFF;
+    border-radius: 30px;
+  }
+  .white-box .white-box-title {
+    font-family: "Rebond Grotesque";
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #010101;
+  }
+  .white-box .white-box-title .progress {
+    position: absolute;
+    left: 50.5%;
+    top: 40%;
+    width: 2.5%;
+    height: 50%;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+  }
+  .white-box .white-box-title .progress-bar {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    height: 70%;
+  }
+  .subtitle-section-white {
+    font-family: "Rebond Grotesque";
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  .paragraph-section-white {
+    font-family: "Roobert";
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .circle2 {
+    width: 100px;
+    height: 100px;
+    background-color: #6A65FF;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vh;
+  }
+  .circle2 .arrow2 {
+    font-size: 2rem;
+    color: white;
   }
 }
 @media screen and (min-width: 1745px) {
@@ -389,7 +443,7 @@
   .cards-container .card1, .cards-container .card2, .cards-container .card3 {
     width: 20vw;
   }
-  .section1 {
+  .section-white {
     top: -250px;
   }
   .memojis {
