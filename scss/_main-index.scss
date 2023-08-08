@@ -1,6 +1,6 @@
 .title1 {
     font-family: map-get($fonts, subtitle);
-    font-size: map-get($sizes, title);
+    font-size: 3rem;
     font-weight: bolder;
     text-align: left;
     color: map-get($colors, white );
@@ -119,6 +119,7 @@
     padding-bottom: 5vh;
     z-index: 20;
 
+
     // padding-left: 1vw;
     // padding-right: 1vw;
 }
@@ -129,7 +130,8 @@
     height: auto;
     border-radius: map-get($border , round);
     align-self: center;
-    margin: 2vh;
+    margin: 1vh;
+    overflow: hidden;
 
     .card-button {
         background-color: map-get($colors, light-blue);

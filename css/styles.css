@@ -119,7 +119,7 @@
 }
 .title1 {
   font-family: "Rebond Grotesque";
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bolder;
   text-align: left;
   color: #FFFFFF;
@@ -232,7 +232,8 @@
   height: auto;
   border-radius: 30px;
   align-self: center;
-  margin: 2vh;
+  margin: 1vh;
+  overflow: hidden;
 }
 .card1 .card-button, .card3 .card-button, .card2 .card-button {
   background-color: #77BFCF;
