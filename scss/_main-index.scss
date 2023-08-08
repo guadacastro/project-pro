@@ -124,6 +124,19 @@
     // padding-right: 1vw;
 }
 
+.card-subtitle {
+    font-family: map-get($fonts, subtitle);
+    font-weight: bold;
+    font-size: map-get($sizes, nav-bar);
+    margin: 0 2vh;
+}
+
+.subtitle2-section-grey {
+    font-family: map-get($fonts, title);
+    font-size: map-get($sizes, subtitle);
+    font-weight: bold;
+}
+
 .card1 {
     background-color: map-get($colors, white);
     width: 80vw;
@@ -132,6 +145,8 @@
     align-self: center;
     margin: 1vh;
     overflow: hidden;
+    // box-shadow: 0px 0px 50px -9px rgba(0,0,0,0.1);
+    // box-shadow: 0px 100px 50px -9px rgba(0,0,0,0.1);
 
     .card-button {
         background-color: map-get($colors, light-blue);
@@ -146,12 +161,7 @@
         width: 34vw;
     }
 
-    .card-subtitle {
-        font-family: map-get($fonts, subtitle);
-        font-weight: bold;
-        font-size: map-get($sizes, nav-bar);
-        margin: 0 2vh;
-    }
+
 
     .card-text {
         font-family: map-get($fonts, title);
@@ -160,18 +170,20 @@
         margin: 1vh 2vh;
     }
 
-    .progress {
-        width: 80%;
-        height: 10px;
-        border-radius: 10px;
-        margin: 0 2vh;
-        .progress-bar {
-            width: 50px;
 
-            background-color: map-get($colors, light-blue);
-        }
+
+}
+
+.progress {
+    width: 80%;
+    height: 10px;
+    border-radius: 10px;
+    margin: 0 2vh;
+    .progress-bar {
+        width: 50px;
+
+        background-color: map-get($colors, light-blue);
     }
-
 }
 
 .card2 {
@@ -205,26 +217,77 @@
 
 }
 
-.section-white{
+
+
+
+.section-grey {
     background-color: map-get($colors, light-grey);
+    height: 200vh; // por ahora fijo, despues sacar
+    position: relative;
+    top: -200px; /* Ajusta el valor para elevar la sección */
+    z-index: -10; /* Asegura que la sección esté por encima de las tarjetas */;
     
 }
 
+.box-container {
+
+    .box1 {
+        margin-top: 30vh;
+        padding: 6vh;
+    }
 
 
+}
 
-// @media screen and (max-width: 1200px)  {
-//     .little-memoji-box {
-//         background-color: red;
-//         .little-memoji {
-//             width: 10px;
-//             border: 2px solid white;
-//             border-radius: 40px;
-//         }
-    
-//     }
+.white-box {
+    background-color: map-get($colors, white);
+    border-radius: map-get($border, round);
+    border: 3px solid rgb(128, 128, 128, 0.06);
+    .white-box-title {
+        font-family: map-get($fonts, subtitle);
+        font-size: map-get($sizes, nav-bar);
+        font-weight: bold;
+        color: map-get($colors, black);
+    }
+}
 
-// }
+.subtitle-section-grey {
+    font-family: map-get($fonts, subtitle);
+    font-size: map-get($sizes, title);
+    font-weight: bold;
+}
+
+.paragraph-section-grey {
+    font-family: map-get($fonts, title);
+    font-size: map-get($sizes, nav-bar);
+    color: rgb(0, 0, 0,0.5);
+
+}
+
+.circle2 {
+    width: 100px;
+    height: 100px;
+    background-color: map-get($colors, violet);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vh;
+    .arrow2 {
+        font-size: 2rem;
+        color: white;
+    }
+}
+
+
+.section-white {
+    background-color: map-get($colors, white);
+    height: 200vh; // por ahora fijo, despues sacar
+    position: relative;
+    top: -1000px; /* Ajusta el valor para elevar la sección */
+    z-index: -11;
+}
 
 
 @media screen and (min-width: 1024px)  {
@@ -312,71 +375,7 @@
         width: 20vw;
     }
 
-    .section-white {
-        background-color: map-get($colors, light-grey);
-        height: 300vh; // por ahora fijo, despues sacar
-        position: relative;
-        top: -200px; /* Ajusta el valor para elevar la sección */
-        z-index: -10; /* Asegura que la sección esté por encima de las tarjetas */;
-        
-    }
     
-    .box-container {
-
-        .box1 {
-            margin-top: 40vh;
-            padding: 6vh;
-        }
-    }
-
-    .white-box {
-        background-color: map-get($colors, white);
-        border-radius: map-get($border, round);
-        .white-box-title {
-            font-family: map-get($fonts, subtitle);
-            font-size: map-get($sizes, nav-bar);
-            font-weight: bold;
-            color: map-get($colors, black);
-
-            .progress{
-                position: absolute;left:50.5%;top:40%;width: 2.5%;height:50%;opacity: 0.8; filter: alpha(opacity=80);
-            }
-            .progress-bar{
-                position:absolute;top:30%; width: 100%;height: 70%;
-            }
-           
-
-        }
-    }
-
-    .subtitle-section-white {
-        font-family: map-get($fonts, subtitle);
-        font-size: map-get($sizes, title);
-        font-weight: bold;
-    }
-    
-    .paragraph-section-white {
-        font-family: map-get($fonts, title);
-        font-size: map-get($sizes, nav-bar);
-        color: rgb(0, 0, 0,0.5);
-
-    }
-
-    .circle2 {
-        width: 100px;
-        height: 100px;
-        background-color: map-get($colors, violet);
-        -webkit-clip-path: circle(50% at 50% 50%);
-        clip-path: circle(50% at 50% 50%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 4vh;
-        .arrow2 {
-            font-size: 2rem;
-            color: white;
-        }
-    }
 }
 
 @media screen and (min-width: 1745px){
@@ -402,7 +401,7 @@
         }
     }
 
-    .section-white {
+    .section-grey {
         top: -250px;
     }
 
