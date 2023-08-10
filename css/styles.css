@@ -119,7 +119,7 @@
 }
 .title1, .title2 {
   font-family: "Rebond Grotesque";
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bolder;
   text-align: left;
   color: #FFFFFF;
@@ -301,9 +301,9 @@
 
 .section-grey {
   background-color: #EEF3FC;
-  height: 360vh;
+  height: 380vh;
   position: relative;
-  top: 23px; /* Ajusta el valor para elevar la sección */
+  top: 91px; /* Ajusta el valor para elevar la sección */
   z-index: -10; /* Asegura que la sección esté por encima de las tarjetas */
 }
 
@@ -354,11 +354,64 @@
 
 .section-white {
   background-color: #FFFFFF;
-  height: 200vh;
+  height: 220vh;
   position: relative;
   top: -8px; /* Ajusta el valor para elevar la sección */
   z-index: -10;
   padding-top: 10vh;
+}
+
+.day-container .chart-line-background {
+  width: 3vw;
+  height: 25vh;
+  border-radius: 30px;
+  background-color: #7d85f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.day-container .chart-line-background .chart-line-pink, .day-container .chart-line-background .chart-line-blue, .day-container .chart-line-background .ten-blue, .day-container .chart-line-background .ten-pink, .day-container .chart-line-background .five-pink {
+  height: 15vh;
+  border-radius: 30px;
+  background-color: #FFB0E9;
+}
+.day-container .chart-line-background .five-pink {
+  height: 5vh;
+}
+.day-container .chart-line-background .ten-pink {
+  height: 10vh;
+}
+.day-container .chart-line-background .chart-line-blue, .day-container .chart-line-background .ten-blue {
+  height: 20vh;
+  background-color: #77BFCF;
+}
+.day-container .chart-line-background .ten-blue {
+  height: 10vh;
+}
+.day-container .paragraph-section-grey {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.dot-pink, .dot-violet, .dot-blue {
+  height: 1vh;
+  width: 1vh;
+  padding: 1vh;
+  background-color: #FFB0E9;
+  border-radius: 50%;
+}
+
+.dot-blue {
+  background-color: #77BFCF;
+}
+
+.dot-violet {
+  background-color: #7d85f8;
+}
+
+.items {
+  font-size: 1rem;
+  font-family: "Roobert";
 }
 
 @media screen and (min-width: 1024px) {
@@ -462,51 +515,6 @@
   }
   .day-container .chart-line-background {
     width: 1.3vw;
-    height: 25vh;
-    border-radius: 30px;
-    background-color: #7d85f8;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-  }
-  .day-container .chart-line-background .chart-line-pink, .day-container .chart-line-background .chart-line-blue, .day-container .chart-line-background .ten-blue, .day-container .chart-line-background .ten-pink, .day-container .chart-line-background .five-pink {
-    height: 15vh;
-    border-radius: 30px;
-    background-color: #FFB0E9;
-  }
-  .day-container .chart-line-background .five-pink {
-    height: 5vh;
-  }
-  .day-container .chart-line-background .ten-pink {
-    height: 10vh;
-  }
-  .day-container .chart-line-background .chart-line-blue, .day-container .chart-line-background .ten-blue {
-    height: 20vh;
-    background-color: #77BFCF;
-  }
-  .day-container .chart-line-background .ten-blue {
-    height: 10vh;
-  }
-  .day-container .paragraph-section-grey {
-    text-align: center;
-    font-size: 1rem;
-  }
-  .dot-pink, .dot-violet, .dot-blue {
-    height: 1vh;
-    width: 1vh;
-    padding: 1vh;
-    background-color: #FFB0E9;
-    border-radius: 50%;
-  }
-  .dot-blue {
-    background-color: #77BFCF;
-  }
-  .dot-violet {
-    background-color: #7d85f8;
-  }
-  .items {
-    font-size: 1rem;
-    font-family: "Roobert";
   }
 }
 @media screen and (min-width: 1745px) {

@@ -1,6 +1,6 @@
 .title1 {
     font-family: map-get($fonts, subtitle);
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bolder;
     text-align: left;
     color: map-get($colors, white );
@@ -228,9 +228,9 @@
 
 .section-grey {
     background-color: map-get($colors, light-grey);
-    height: 360vh; // por ahora fijo, despues sacar
+    height: 380vh; // por ahora fijo, despues sacar
     position: relative;
-    top: 23px; /* Ajusta el valor para elevar la sección */
+    top: 91px; /* Ajusta el valor para elevar la sección */
     z-index: -10; /* Asegura que la sección esté por encima de las tarjetas */;
     
 }
@@ -290,12 +290,83 @@
 
 .section-white {
     background-color: map-get($colors, white);
-    height: 200vh; // por ahora fijo, despues sacar
+    height: 220vh; // por ahora fijo, despues sacar
     position: relative;
     top: -8px; /* Ajusta el valor para elevar la sección */
     z-index: -10;
     padding-top: 10vh;
 }
+
+.day-container {
+    // margin-left: .5vw;
+    // margin-right: .5vw;
+    .chart-line-background {
+        width: 3vw;
+        height: 25vh;
+        border-radius: map-get($border, round);
+        background-color: map-get($colors, light-violet);
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        .chart-line-pink{
+            height: 15vh;
+            border-radius: map-get($border, round);
+            background-color: map-get($colors, pink);        
+        }
+
+        .five-pink {
+            @extend .chart-line-pink;
+            height: 5vh;
+        }
+
+        .ten-pink {
+            @extend .chart-line-pink;
+            height: 10vh;
+        }
+
+        .chart-line-blue {
+            @extend .chart-line-pink;
+            height: 20vh;
+            background-color: map-get($colors, light-blue);
+        }
+
+        .ten-blue {
+            @extend .chart-line-blue;
+            height: 10vh;
+        }
+
+    }
+
+    .paragraph-section-grey {
+        text-align: center;  
+        font-size: map-get($sizes, body);    
+     }
+}
+
+.dot-pink {
+    height: 1vh;
+    width: 1vh;
+    padding: 1vh;
+    
+    background-color: map-get($colors, pink);
+    border-radius: 50%;
+}
+
+.dot-blue {
+    @extend .dot-pink;
+    background-color: map-get($colors, light-blue);
+}
+
+.dot-violet {
+    @extend .dot-pink;
+    background-color: map-get($colors, light-violet);
+}
+
+.items {
+    font-size: map-get($sizes, body);
+    font-family: map-get($fonts,title);
+}
+
 
 
 @media screen and (min-width: 1024px)  {
@@ -420,73 +491,10 @@
     .day-container {
         margin-left: .5vw;
         margin-right: .5vw;
-        .chart-line-background {
-            width: 1.3vw;
-            height: 25vh;
-            border-radius: map-get($border, round);
-            background-color: map-get($colors, light-violet);
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
-            .chart-line-pink{
-                height: 15vh;
-                border-radius: map-get($border, round);
-                background-color: map-get($colors, pink);        
-            }
-
-            .five-pink {
-                @extend .chart-line-pink;
-                height: 5vh;
-            }
-
-            .ten-pink {
-                @extend .chart-line-pink;
-                height: 10vh;
-            }
-
-            .chart-line-blue {
-                @extend .chart-line-pink;
-                height: 20vh;
-                background-color: map-get($colors, light-blue);
-            }
-
-            .ten-blue {
-                @extend .chart-line-blue;
-                height: 10vh;
-            }
-    
-        }
-
-        .paragraph-section-grey {
-            text-align: center;  
-            font-size: map-get($sizes, body);         
-         }
+    .chart-line-background {
+        width: 1.3vw;
     }
-
-    .dot-pink {
-        height: 1vh;
-        width: 1vh;
-        padding: 1vh;
-        
-        background-color: map-get($colors, pink);
-        border-radius: 50%;
     }
-
-    .dot-blue {
-        @extend .dot-pink;
-        background-color: map-get($colors, light-blue);
-    }
-
-    .dot-violet {
-        @extend .dot-pink;
-        background-color: map-get($colors, light-violet);
-    }
-
-    .items {
-        font-size: map-get($sizes, body);
-        font-family: map-get($fonts,title);
-    }
-
 
 
 
