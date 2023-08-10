@@ -8,6 +8,12 @@
 
 }
 
+.title2 {
+    @extend .title1;
+    font-size: 3rem;
+    color: map-get($colors, black );
+}
+
 .gradient {
     background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
     -webkit-background-clip: text; /* Safari/Chrome-specific prefix */
@@ -222,9 +228,9 @@
 
 .section-grey {
     background-color: map-get($colors, light-grey);
-    height: 200vh; // por ahora fijo, despues sacar
+    height: 360vh; // por ahora fijo, despues sacar
     position: relative;
-    top: -200px; /* Ajusta el valor para elevar la sección */
+    top: 23px; /* Ajusta el valor para elevar la sección */
     z-index: -10; /* Asegura que la sección esté por encima de las tarjetas */;
     
 }
@@ -232,7 +238,7 @@
 .box-container {
 
     .box1 {
-        margin-top: 30vh;
+        margin-top: 10vh;
         padding: 6vh;
     }
 
@@ -262,6 +268,7 @@
     font-size: map-get($sizes, nav-bar);
     color: rgb(0, 0, 0,0.5);
 
+
 }
 
 .circle2 {
@@ -285,8 +292,9 @@
     background-color: map-get($colors, white);
     height: 200vh; // por ahora fijo, despues sacar
     position: relative;
-    top: -1000px; /* Ajusta el valor para elevar la sección */
-    z-index: -11;
+    top: -8px; /* Ajusta el valor para elevar la sección */
+    z-index: -10;
+    padding-top: 10vh;
 }
 
 
@@ -297,7 +305,11 @@
         margin: 0;
         margin-top: 20vh;
     }
-
+    .title2 {
+        font-size: 4rem;
+        padding: 0;
+        margin: 0;
+    }
     .little-box {
         margin: 0;
         height: 23vh;
@@ -375,6 +387,35 @@
         width: 20vw;
     }
 
+    .box-container {
+
+        .box1 {
+            margin-top: 30vh;
+            padding: 6vh;
+        }
+    
+    
+    }
+
+    .section-grey {
+        background-color: map-get($colors, light-grey);
+        height: 200vh; // por ahora fijo, despues sacar
+        position: relative;
+        top: -200px; /* Ajusta el valor para elevar la sección */
+        z-index: -10; /* Asegura que la sección esté por encima de las tarjetas */;
+        
+    }
+
+
+
+    .section-white {
+        background-color: map-get($colors, white);
+        height: 200vh; // por ahora fijo, despues sacar
+        position: relative;
+        top: -200px; /* Ajusta el valor para elevar la sección */
+        z-index: -10;
+        padding-top: 10vh;
+    }
     
 }
 
@@ -434,6 +475,9 @@
             width: 1.5vw;
         }
     }
+
+
+
 
 
 }

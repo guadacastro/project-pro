@@ -117,13 +117,18 @@
     background-color: #050027;
   }
 }
-.title1 {
+.title1, .title2 {
   font-family: "Rebond Grotesque";
   font-size: 3rem;
   font-weight: bolder;
   text-align: left;
   color: #FFFFFF;
   margin: 1vh 4vw 1vh 4vw;
+}
+
+.title2 {
+  font-size: 3rem;
+  color: #010101;
 }
 
 .gradient {
@@ -296,14 +301,14 @@
 
 .section-grey {
   background-color: #EEF3FC;
-  height: 200vh;
+  height: 360vh;
   position: relative;
-  top: -200px; /* Ajusta el valor para elevar la sección */
+  top: 23px; /* Ajusta el valor para elevar la sección */
   z-index: -10; /* Asegura que la sección esté por encima de las tarjetas */
 }
 
 .box-container .box1 {
-  margin-top: 30vh;
+  margin-top: 10vh;
   padding: 6vh;
 }
 
@@ -351,15 +356,21 @@
   background-color: #FFFFFF;
   height: 200vh;
   position: relative;
-  top: -1000px; /* Ajusta el valor para elevar la sección */
-  z-index: -11;
+  top: -8px; /* Ajusta el valor para elevar la sección */
+  z-index: -10;
+  padding-top: 10vh;
 }
 
 @media screen and (min-width: 1024px) {
-  .title1 {
+  .title1, .title2 {
     font-size: 8rem;
     margin: 0;
     margin-top: 20vh;
+  }
+  .title2 {
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
   }
   .little-box {
     margin: 0;
@@ -425,6 +436,25 @@
   }
   .card1, .card2, .card3 {
     width: 20vw;
+  }
+  .box-container .box1 {
+    margin-top: 30vh;
+    padding: 6vh;
+  }
+  .section-grey {
+    background-color: #EEF3FC;
+    height: 200vh;
+    position: relative;
+    top: -200px; /* Ajusta el valor para elevar la sección */
+    z-index: -10; /* Asegura que la sección esté por encima de las tarjetas */
+  }
+  .section-white {
+    background-color: #FFFFFF;
+    height: 200vh;
+    position: relative;
+    top: -200px; /* Ajusta el valor para elevar la sección */
+    z-index: -10;
+    padding-top: 10vh;
   }
 }
 @media screen and (min-width: 1745px) {
