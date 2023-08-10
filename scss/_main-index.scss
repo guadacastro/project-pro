@@ -417,6 +417,80 @@
         padding-top: 10vh;
     }
     
+    .day-container {
+        margin-left: .5vw;
+        margin-right: .5vw;
+        .chart-line-background {
+            width: 1.3vw;
+            height: 25vh;
+            border-radius: map-get($border, round);
+            background-color: map-get($colors, light-violet);
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            .chart-line-pink{
+                height: 15vh;
+                border-radius: map-get($border, round);
+                background-color: map-get($colors, pink);        
+            }
+
+            .five-pink {
+                @extend .chart-line-pink;
+                height: 5vh;
+            }
+
+            .ten-pink {
+                @extend .chart-line-pink;
+                height: 10vh;
+            }
+
+            .chart-line-blue {
+                @extend .chart-line-pink;
+                height: 20vh;
+                background-color: map-get($colors, light-blue);
+            }
+
+            .ten-blue {
+                @extend .chart-line-blue;
+                height: 10vh;
+            }
+    
+        }
+
+        .paragraph-section-grey {
+            text-align: center;  
+            font-size: map-get($sizes, body);         
+         }
+    }
+
+    .dot-pink {
+        height: 1vh;
+        width: 1vh;
+        padding: 1vh;
+        
+        background-color: map-get($colors, pink);
+        border-radius: 50%;
+    }
+
+    .dot-blue {
+        @extend .dot-pink;
+        background-color: map-get($colors, light-blue);
+    }
+
+    .dot-violet {
+        @extend .dot-pink;
+        background-color: map-get($colors, light-violet);
+    }
+
+    .items {
+        font-size: map-get($sizes, body);
+        font-family: map-get($fonts,title);
+    }
+
+
+
+
+
 }
 
 @media screen and (min-width: 1745px){

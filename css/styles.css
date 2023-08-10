@@ -456,6 +456,58 @@
     z-index: -10;
     padding-top: 10vh;
   }
+  .day-container {
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+  }
+  .day-container .chart-line-background {
+    width: 1.3vw;
+    height: 25vh;
+    border-radius: 30px;
+    background-color: #7d85f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  .day-container .chart-line-background .chart-line-pink, .day-container .chart-line-background .chart-line-blue, .day-container .chart-line-background .ten-blue, .day-container .chart-line-background .ten-pink, .day-container .chart-line-background .five-pink {
+    height: 15vh;
+    border-radius: 30px;
+    background-color: #FFB0E9;
+  }
+  .day-container .chart-line-background .five-pink {
+    height: 5vh;
+  }
+  .day-container .chart-line-background .ten-pink {
+    height: 10vh;
+  }
+  .day-container .chart-line-background .chart-line-blue, .day-container .chart-line-background .ten-blue {
+    height: 20vh;
+    background-color: #77BFCF;
+  }
+  .day-container .chart-line-background .ten-blue {
+    height: 10vh;
+  }
+  .day-container .paragraph-section-grey {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .dot-pink, .dot-violet, .dot-blue {
+    height: 1vh;
+    width: 1vh;
+    padding: 1vh;
+    background-color: #FFB0E9;
+    border-radius: 50%;
+  }
+  .dot-blue {
+    background-color: #77BFCF;
+  }
+  .dot-violet {
+    background-color: #7d85f8;
+  }
+  .items {
+    font-size: 1rem;
+    font-family: "Roobert";
+  }
 }
 @media screen and (min-width: 1745px) {
   .little-box {
