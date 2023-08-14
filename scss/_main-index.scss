@@ -381,25 +381,25 @@
         padding: 0;
         margin: 0;
     }
-    .little-box {
-        margin: 0;
-        height: 23vh;
-        margin-top: 22vh;
-    }
+    // .little-box {
+    //     margin: 0;
+    //     height: 23vh;
+    //     margin-top: 22vh;
+    // }
 
-    .little-memoji-box {
-        margin-left: 2vw;
-        margin-top: 2vh;
-        width: auto;
-        .little-memoji {
-            width: 1.9vw;
-            border: 2px solid white;
-            border-radius: 40px;
-            margin-bottom: 0vh;
-            margin-top: 0;
-        }
+    // .little-memoji-box {
+    //     margin-left: 2vw;
+    //     margin-top: 2vh;
+    //     width: auto;
+    //     .little-memoji {
+    //         width: 2vw;
+    //         border: 2px solid white;
+    //         border-radius: 40px;
+    //         margin-bottom: 0vh;
+    //         margin-top: 0;
+    //     }
     
-    }
+    // }
 
     .paragraph {
         margin-left: 0vw;
@@ -426,32 +426,33 @@
         justify-content: center;
         position: relative;
         flex-shrink: 0;
-        
-        .memoji1 {
-            width: 18vw;
+
+        .memoji1, .memoji2, .memoji3 {
+            width: 15vw;
             flex-shrink: 0;
             position: absolute;
+        }
+        
+        .memoji1 {
             left: 0px;
         }
 
         .memoji2 {
-            width: 18vw;
-            flex-shrink: 0;
-            position: absolute;
             left: 9vw;
             z-index: 10;
         }
 
         .memoji3 {
-            width: 18vw;
-            flex-shrink: 0;
-            position: absolute;
             left: 18vw;
         }
     }
 
     .cards-container {
         flex-direction: row;
+        width: auto;
+        .card1 {
+            width: 100vw;
+        }
     }
 
     .card1 {
@@ -501,15 +502,45 @@
 
 }
 
-@media screen and (min-width: 1745px){
+@media screen and (min-width: 580px) and (max-width: 1000px){
+
+    .title1 {
+        font-size: 5rem;
+        margin-left: 0;
+        margin-bottom: 0;
+     
+    }
 
     .little-box {
         margin: 0;
-        margin-top: 20vh;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        margin-left: 2vw;
         align-items: center;
         justify-content: center;
         padding: 0;
-        height: 23vh;
+        height: 15vh;
+    }
+
+    .little-memoji-box {
+        margin-left: 2vw;
+   
+        
+        .little-memoji {
+            width: 4vw;
+
+            
+        }
+   }
+
+
+
+
+
+
+    .paragraph {
+        justify-self: flex-start;
+        font-size: 2rem;
     }
 
     .cards-container {
@@ -517,10 +548,17 @@
         flex-wrap: nowrap;
         justify-content: center;
         margin-top: 20vh;
-        justify-content: center;
-        width: auto;
+        justify-content: space-between;
+        border: 20px solid rgb(255, 255, 255, 0.2);
+        margin: 10vh 1vw;
+        flex-direction: column;
+        // background-color: #2CD8D5;
+        margin-bottom: 30vh;
+
         .card1 {
-            width: 20vw;
+            width: 50vw;
+  
+
         }
     }
 
@@ -533,8 +571,12 @@
         flex-wrap: nowrap;
     
         .memoji1, .memoji2, .memoji3 {
-            width: 14vw;
-            height: auto;
+            width: 23vw;
+            flex-shrink: 0;
+        }
+
+        .memoji1 {
+            left: 0;
         }
 
         .memoji2 {
@@ -548,15 +590,7 @@
 
  
 
-    .little-memoji-box{
-        flex-direction: column;
-        flex-wrap: nowrap;
-        height: auto;
-        
-        .little-memoji {
-            width: 1.5vw;
-        }
-    }
+
 
 
 
@@ -564,6 +598,101 @@
 
 }
 
+@media screen and (min-width: 1001px) and (max-width:1500px) {
+    .title1 {
+        font-size: 7rem;
+     
+    }
+    .little-memoji-box {
+        margin-left: 2vw;
+        
+        .little-memoji {
+            width: 2.3vw;
+            
+        }
+   }
+
+    .memojis {
+        .memoji1, .memoji2, .memoji3 {
+            width: 20vw;
+            flex-shrink: 0;
+            position: absolute;
+        }
+    }
+    .cards-container {
+        // background-color: violet;
+        // flex-wrap: nowrap;
+   
+        .card1 {
+            width: 50vw;
+            
+        }
+    }
+}
+
+
+@media screen and (min-width: 1501px) and (max-width:1800px) {
+    .cards-container {
+        // background-color: blue;
+        flex-wrap: nowrap;
+        .card1 {
+            width: 20vw;
+            
+        }
+    }
+    .little-memoji-box {
+
+        flex-wrap: nowrap;
+        
+        .little-memoji {
+            width: 2.4vw;
+            
+        }
+   }
+
+    .memoji1, .memoji2, .memoji3 {
+        width: 22vw;
+        flex-shrink: 0;
+        position: absolute;
+    }
+}
+
+
+
+@media screen and (min-width: 1801px) and (max-width: 2700px) {
+
+    .cards-container {
+        // background-color: red;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        padding: 2vh 0;
+        margin-left: -6vw;
+        margin-right: -6vw;
+        .card1 {
+            width: 18vw;
+            
+        }
+    }
+    .little-box {
+        padding-left: 0;
+        margin-left: 0 ;
+        margin-right: 0;
+        margin-top: 20vh;
+        height: 20vh;
+    }
+    .little-memoji-box {
+        .little-memoji {
+            width: 1.4vw;
+            
+        }
+   }
+
+    .memoji1, .memoji2, .memoji3 {
+        width: 10vw;
+        flex-shrink: 0;
+        position: absolute;
+    }
+}
 
 // @media screen and (min-width: 769px) and (max-width: 1023) {
 

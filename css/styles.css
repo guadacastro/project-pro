@@ -425,23 +425,6 @@
     padding: 0;
     margin: 0;
   }
-  .little-box {
-    margin: 0;
-    height: 23vh;
-    margin-top: 22vh;
-  }
-  .little-memoji-box {
-    margin-left: 2vw;
-    margin-top: 2vh;
-    width: auto;
-  }
-  .little-memoji-box .little-memoji {
-    width: 1.9vw;
-    border: 2px solid white;
-    border-radius: 40px;
-    margin-bottom: 0vh;
-    margin-top: 0;
-  }
   .paragraph {
     margin-left: 0vw;
   }
@@ -465,27 +448,27 @@
     position: relative;
     flex-shrink: 0;
   }
-  .memojis .memoji1 {
-    width: 18vw;
+  .memojis .memoji1, .memojis .memoji2, .memojis .memoji3 {
+    width: 15vw;
     flex-shrink: 0;
     position: absolute;
+  }
+  .memojis .memoji1 {
     left: 0px;
   }
   .memojis .memoji2 {
-    width: 18vw;
-    flex-shrink: 0;
-    position: absolute;
     left: 9vw;
     z-index: 10;
   }
   .memojis .memoji3 {
-    width: 18vw;
-    flex-shrink: 0;
-    position: absolute;
     left: 18vw;
   }
   .cards-container {
     flex-direction: row;
+    width: auto;
+  }
+  .cards-container .card1, .cards-container .card2, .cards-container .card3 {
+    width: 100vw;
   }
   .card1, .card2, .card3 {
     width: 20vw;
@@ -517,25 +500,45 @@
     width: 1.3vw;
   }
 }
-@media screen and (min-width: 1745px) {
+@media screen and (min-width: 580px) and (max-width: 1000px) {
+  .title1, .title2 {
+    font-size: 5rem;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
   .little-box {
     margin: 0;
-    margin-top: 20vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 2vw;
     align-items: center;
     justify-content: center;
     padding: 0;
-    height: 23vh;
+    height: 15vh;
+  }
+  .little-memoji-box {
+    margin-left: 2vw;
+  }
+  .little-memoji-box .little-memoji {
+    width: 4vw;
+  }
+  .paragraph {
+    justify-self: flex-start;
+    font-size: 2rem;
   }
   .cards-container {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     margin-top: 20vh;
-    justify-content: center;
-    width: auto;
+    justify-content: space-between;
+    border: 20px solid rgba(255, 255, 255, 0.2);
+    margin: 10vh 1vw;
+    flex-direction: column;
+    margin-bottom: 30vh;
   }
   .cards-container .card1, .cards-container .card2, .cards-container .card3 {
-    width: 20vw;
+    width: 50vw;
   }
   .section-grey {
     top: -250px;
@@ -544,8 +547,11 @@
     flex-wrap: nowrap;
   }
   .memojis .memoji1, .memojis .memoji2, .memojis .memoji3 {
-    width: 14vw;
-    height: auto;
+    width: 23vw;
+    flex-shrink: 0;
+  }
+  .memojis .memoji1 {
+    left: 0;
   }
   .memojis .memoji2 {
     left: 7vw;
@@ -553,12 +559,69 @@
   .memojis .memoji3 {
     left: 14vw;
   }
+}
+@media screen and (min-width: 1001px) and (max-width: 1500px) {
+  .title1, .title2 {
+    font-size: 7rem;
+  }
   .little-memoji-box {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    height: auto;
+    margin-left: 2vw;
   }
   .little-memoji-box .little-memoji {
-    width: 1.5vw;
+    width: 2.3vw;
+  }
+  .memojis .memoji1, .memojis .memoji2, .memojis .memoji3 {
+    width: 20vw;
+    flex-shrink: 0;
+    position: absolute;
+  }
+  .cards-container .card1, .cards-container .card2, .cards-container .card3 {
+    width: 50vw;
+  }
+}
+@media screen and (min-width: 1501px) and (max-width: 1800px) {
+  .cards-container {
+    flex-wrap: nowrap;
+  }
+  .cards-container .card1, .cards-container .card2, .cards-container .card3 {
+    width: 20vw;
+  }
+  .little-memoji-box {
+    flex-wrap: nowrap;
+  }
+  .little-memoji-box .little-memoji {
+    width: 2.4vw;
+  }
+  .memoji1, .memoji2, .memoji3 {
+    width: 22vw;
+    flex-shrink: 0;
+    position: absolute;
+  }
+}
+@media screen and (min-width: 1801px) and (max-width: 2700px) {
+  .cards-container {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 2vh 0;
+    margin-left: -6vw;
+    margin-right: -6vw;
+  }
+  .cards-container .card1, .cards-container .card2, .cards-container .card3 {
+    width: 18vw;
+  }
+  .little-box {
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20vh;
+    height: 20vh;
+  }
+  .little-memoji-box .little-memoji {
+    width: 1.4vw;
+  }
+  .memoji1, .memoji2, .memoji3 {
+    width: 10vw;
+    flex-shrink: 0;
+    position: absolute;
   }
 }/*# sourceMappingURL=styles.css.map */
